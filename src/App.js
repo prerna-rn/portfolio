@@ -14,13 +14,13 @@ function App() {
   const experienceData = [
     {
       title: "Software Engineering Intern",
-      company: "TBD",
+      company: "@TBD",
       date: "TBD",
       description: "TBD"
     },
     {
       title: "Machine Learning Research Intern",
-      company: "Prodigal AI",
+      company: "@Prodigal AI",
       date: "March 2023 - July 2023",
       description: `Drove research and development of groundbreaking projects, leveraging cutting-edge
       technologies like LangChain, LLMs, GPT-4 to deliver innovative solutions.

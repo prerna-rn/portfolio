@@ -7,6 +7,9 @@ import navIcon3 from '../assets/img/nav-icon3.svg';
 import { HashLink } from 'react-router-hash-link';
 import { FaHome,FaBriefcase, FaLaptopCode, FaFileCode } from 'react-icons/fa';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { CgGitFork } from "react-icons/cg";
+import { AiFillStar } from "react-icons/ai";
+import Button from "react-bootstrap/Button";
 
 import {
   BrowserRouter as Router
@@ -66,9 +69,20 @@ export const NavBar = () => {
               <a href="https://www.linkedin.com/in/prerna-s-5b116922a/"><FaLinkedin /></a>
               <a href="https://twitter.com/Prernasigh"><FaTwitter /></a>
               </div>
-              <HashLink to='#connect'>
+              <Nav.Item className="fork-btn">
+              <Button
+                href="https://github.com/prerna-rn/portfolio"
+                target="_blank"
+                className="fork-btn-inner"
+                style={{ backgroundColor: '#DC84F3 !important' }}
+              >
+                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
+                <AiFillStar style={{ fontSize: "1.1em" }} />
+              </Button>
+            </Nav.Item>
+              {/* <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
-              </HashLink>
+              </HashLink> */}
             </span>
           </Navbar.Collapse>
         </Container>

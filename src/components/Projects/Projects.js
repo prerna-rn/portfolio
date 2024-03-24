@@ -2,16 +2,22 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import uni from './uni.png';
 
 export const Projects = () => {
 
   const projects = [
     // Your 6 projects here
     {
-      title: "Chatify",
-      description: "Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages.",
+      image: uni,
+      title: "EduSangam",
+      description: `Built a full-stack website in a team of 6 to revolutionize education by blending traditional and online
+      learning. Leveraged technology, real-time data, and personalized approaches to enhance individual student
+      performance and address challenges in larger classroom settings.
+      • Worked on integrating ML models with the website using Flask. Developed a chatbot and
+      collaborated on developing accurate ML algorithms.`,
       ghLink: "https://github.com/soumyajit4419/Chatify",
-      demoLink: "https://chatify-49.web.app/",
+     
     },
     {
       title: "Bits-0f-C0de",

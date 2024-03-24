@@ -172,12 +172,16 @@ span.navbar-text {
 .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
+.nav-item .fork-btn .fork-btn-inner {
+  background-color: #DC84F3 !important;
+  /* other styles... */
+}
 .navbar-link::after {
   content: '';
   display: block;
   width: 0;
   height: 4px; /* Make the underline thicker */
-  background: #DC84F3; /* Make the underline white */
+  background: #DC84F3; /* Make the underline */
   border-radius: 2px;
   transition: width .3s;
 }
