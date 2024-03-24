@@ -4,6 +4,7 @@ import headerImg from "../assets/img/prerna.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import resume from '../assets/Prerna_Singh_Resume_Mar2024.pdf';
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -11,8 +12,8 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
-  const period = 2000;
+  const toRotate = [ "Web Developer", "Software Engineer", "Machine Learning Explorer" ];
+  const period = 500;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -56,9 +57,9 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Prerna- `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "ML Enthusiast", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Download Resume<ArrowRightCircle size={25} /></button>
+                <h1>{`Hi! I'm Prerna- `} <span className="txt-rotate" dataPeriod="500" data-rotate='[ "Web Developer", "Software Engineer", "Machine Learning Explorer" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>My feminine energy is an asset.</p>
+                  <button onClick={() => window.open(resume)}>Download Resume<ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>
