@@ -1,13 +1,14 @@
-import logo from './logo.svg';
+// import logo from './prernalogo.png';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
 import { Skills } from "./components/Skills";
-import { Projects } from "./components/Projects";
+// import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import Experience from "./components/Experience";
+import {Projects} from './components/Projects/Projects';
 import 'react-vertical-timeline-component/style.min.css'; // import the CSS styles
 function App() {
   const experienceData = [

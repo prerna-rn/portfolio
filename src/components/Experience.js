@@ -18,7 +18,7 @@ function Experience({ experienceData }) {
                         contentStyle={{ background: 'rgba(255, 255, 255, 0.9)', color: '#E5CFF7', borderRadius: '15px' }}
                         icon={<FaLaptop />}
                     >
-                        <h3 className="vertical-timeline-element-title">{exp.title}</h3>
+                        <h3 className="vertical-timeline-element-title" style={{ color: '#2d1759' }}>{exp.title}</h3>
                         <h4 className="vertical-timeline-element-subtitle">{exp.company}</h4>
                         <p className="vertical-timeline-element-description">{exp.description}</p>
                     </VerticalTimelineElement>

@@ -1,11 +1,10 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
+import React, { useState } from 'react';
 import colorSharp from "../assets/img/color-sharp.png"
+import '../App.css'
 
 export const Skills = () => {
   const responsive = {
@@ -28,6 +27,23 @@ export const Skills = () => {
     }
   };
 
+  function MyProgressBar({ value }) {
+    return (
+      <div style={{ width: '150px', height: '150px' }}>
+        <CircularProgressbar
+          value={value}
+          text={`${value}%`}
+          styles={buildStyles({
+            pathColor: '#836FFF',
+            textColor: '#FFF',
+            trailColor: '#151515',
+            backgroundColor: '#3e98c7',
+          })}
+        />
+      </div>
+    );
+  }
+
   return (
     <section className="skill" id="skills">
         <div className="container">
@@ -38,20 +54,28 @@ export const Skills = () => {
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Front-End(React, HTML, CSS, JS)</h5>
+                                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                                  <MyProgressBar value={80} />
+                                  <h5 style={{ marginTop: '20px' }}>Front-End <br/>(React, HTML, CSS, JS)</h5>
+                                </div>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Back-end(Node.js, PHP)</h5>
+                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                                  <MyProgressBar value={60}  />
+                                  <h5 style={{ marginTop: '20px' }}>Back-End <br/>(Node.js, PHP)</h5>
+                                </div>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>UI Design</h5>
+                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                                  <MyProgressBar value={85}  />
+                                  <h5 style={{ marginTop: '20px' }}>Machine Learning</h5>
+                                </div>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Machine Learning</h5>
+                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                                  <MyProgressBar value={70}  />
+                                  <h5 style={{ marginTop: '20px' }}>UI Design</h5>
+                                </div>
                             </div>
                         </Carousel>
                     </div>
