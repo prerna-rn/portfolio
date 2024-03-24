@@ -13,7 +13,7 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   const toRotate = [ "Web Developer", "Software Engineer", "Machine Learning Explorer" ];
-  const period = 500;
+  const period = 300;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -57,9 +57,10 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Prerna- `} <span className="txt-rotate" dataPeriod="500" data-rotate='[ "Web Developer", "Software Engineer", "Machine Learning Explorer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1 className="greeting">{`Hi! I'm Prerna- `} <br></br>
+                <span className="txt-rotate" dataPeriod="300" data-rotate='[ "Web Developer", "Software Engineer", "Machine Learning Explorer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>My feminine energy is an asset.</p>
-                  <button onClick={() => window.open(resume)}>Download Resume<ArrowRightCircle size={25} /></button>
+                  <button className="download-button" onClick={() => window.open(resume)}>Download Resume<ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
           </Col>

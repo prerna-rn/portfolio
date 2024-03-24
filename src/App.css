@@ -118,10 +118,21 @@ span.navbar-text {
     display: inline-block;
     margin-left: 14px;
 }
+.social-icon a svg {
+  color: #ffffff;
+}
+.social-icon a:hover svg {
+  color: #000000;
+  background-color: #ffffff;
+}
 .social-icon a {
     width: 42px;
     height: 42px;
-    background: rgba(217, 217, 217, 0.1);
+    color: #ffffff;
+    /* background: rgba(217, 217, 217, 0.1); */
+    background: transparent;
+    transition: background-color 0.3s ease;
+    border: none;
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
@@ -130,7 +141,16 @@ span.navbar-text {
     line-height: 1;
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
-.social-icon a::before {
+.social-icon a::before,
+.social-icon a::after {
+    content: none; /* Add this line */
+}
+.social-icon a:hover {
+  color: #000000; /* Make the icons black on hover */
+  background-color: #ffffff; /* Fill the circle with white on hover */
+}
+
+/* .social-icon a::before {
     content: "";
     width: 42px;
     height: 42px;
@@ -142,14 +162,30 @@ span.navbar-text {
 }
 .social-icon a:hover::before {
     transform: scale(1);
-}
+} */
 .social-icon a img {
+  display: none;
 	width: 40%;
 	z-index: 1;
 	transition: 0.3s ease-in-out;
 }
 .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+.navbar-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px; /* Make the underline thicker */
+  background: #ffffff; /* Make the underline white */
+  border-radius: 2px;
+  transition: width .3s;
+}
+.navbar-link:hover::after {
+  width: 100%;
+}
+.navbar-link {
+  font-size: 16px; /* Adjust this value as needed */
 }
 .navbar-text button {
   font-weight: 700;
@@ -232,6 +268,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Banner Css ************/
+.download-button {
+  border: 3px solid #ffffff; /* Adjust color as needed */
+  padding: 10px; /* Adjust padding as needed */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px; /* Adjust gap as needed */
+}
 .banner {
   margin-top: 0;
   padding: 150px 0 100px 0;
@@ -240,12 +284,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.greeting {
+  background: linear-gradient(to right, #BEADFA, #FFBDF7, #DFCCFB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Adjust color as needed */
+}
+.greeting span {
+  color: #FFFFFF; /* Adjust color as needed */
+  background: none;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+}
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
   border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px); /* Create the glassmorphism effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Add a shadow */
+  border-radius: 10px; /* Round the corners */
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
@@ -466,6 +524,38 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
+
+/* experience css */
+
+.vertical-timeline-element-title {
+  color: #33186B; /* Replace with your desired color */
+}
+
+.vertical-timeline-element-subtitle {
+  color: #5D3587; /* Replace with your desired color */
+}
+
+.vertical-timeline-element-content p {
+  color: purple; /* Replace with your desired color */
+}
+.vertical-timeline-element-title,
+.vertical-timeline-element-subtitle,
+.vertical-timeline-element-description {
+  margin-bottom: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(180deg); }
+  40% { transform: rotate(180deg); }
+  60% { transform: rotate(360deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.spin {
+  animation: spin 10s linear infinite;
+}
+
 
 /************ Projects Css ************/
 .contact {
