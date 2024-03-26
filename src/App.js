@@ -6,9 +6,10 @@ import { Banner } from "./components/Banner";
 import { Skills } from "./components/Skills";
 // import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
-import { Footer } from "./components/Footer";
+import  Footer  from "./components/Footer";
 import Experience from "./components/Experience";
 import {Projects} from './components/Projects/Projects';
+import Publications from './components/Publications';
 import 'react-vertical-timeline-component/style.min.css'; // import the CSS styles
 function App() {
   const experienceData = [
@@ -35,7 +36,8 @@ function App() {
       <Skills />
       <Projects />
       <Experience experienceData={experienceData} />
-      <Contact />
+      <Publications />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );

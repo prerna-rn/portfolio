@@ -59,7 +59,7 @@ export const Banner = () => {
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1 className="greeting">{`Hi! I'm Prerna- `} <br></br>
                 <span className="txt-rotate" dataPeriod="300" data-rotate='[ "Web Developer", "Software Engineer", "Machine Learning Explorer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>My feminine energy is an asset.</p>
+                  <p>I'm thrilled you're here! This portfolio is a curated glimpse into my technical journey. Dive in to see the projects that sparked my passion and honed my skills.</p>
                   <button className="download-button" onClick={() => window.open(resume)}>Download Resume<ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>

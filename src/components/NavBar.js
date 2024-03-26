@@ -6,7 +6,7 @@ import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import { HashLink } from 'react-router-hash-link';
 import { FaHome,FaBriefcase, FaLaptopCode, FaFileCode } from 'react-icons/fa';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaBook } from 'react-icons/fa';
 import { CgGitFork } from "react-icons/cg";
 import { AiFillStar } from "react-icons/ai";
 import Button from "react-bootstrap/Button";
@@ -61,6 +61,9 @@ export const NavBar = () => {
               </Nav.Link>
               <Nav.Link href="#experience" className={activeLink === 'experience' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('experience')}>
                 <FaBriefcase /> Experience
+              </Nav.Link>  
+              <Nav.Link href="#publications" className={activeLink === 'publications' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('publications')}>
+                <FaBook /> Publications
               </Nav.Link>  
             </Nav>
             <span className="navbar-text">

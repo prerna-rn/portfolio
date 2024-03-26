@@ -424,6 +424,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Projects Css ************/
+#tsparticles {
+  position: fixed !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  width: 100%;
+  height: 100%;
+}
+
 .project-section {
   position: relative !important;
   padding-top: 150px !important;
@@ -487,7 +495,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .card-img-top {
   padding: 20px !important;
-  opacity: 0.8 !important;
+  opacity: 1 !important;
   border-radius: 10px !important;
 }
 
@@ -818,13 +826,58 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   border-radius: 18px;
 }
+
+.publications-container {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+  margin: 20px;
+}
 .footer img {
   width: 26%;
 }
-.footer p {
-  font-weight: 400;
-  font-size: 14px;
-  color: #B8B8B8;
-  letter-spacing: 0.5px;
-  margin-top: 20px;
+/* Footer */
+/* --------- */
+.footer {
+  background-color: rgb(10, 4, 22);
+  bottom: 0 !important;
+  padding-top: 10px !important;
+  padding-bottom: 8px !important ;
+}
+.footer-copywright {
+  text-align: center !important;
+}
+
+.footer-body {
+  z-index: 1;
+  text-align: center !important;
+}
+
+@media (max-width: 767px) {
+  .footer-copywright {
+    text-align: center !important;
+  }
+
+  .footer-body {
+    text-align: center !important;
+  }
+}
+
+.footer h3 {
+  font-size: 1em;
+  color: white !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+}
+.footer-icons {
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+  padding: 0 !important;
+}
+
+.blockquote-footer {
+  color: #a588c0 !important;
 }
