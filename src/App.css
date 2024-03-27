@@ -1,4 +1,4 @@
-/************ Custom Font ************/
+
 @font-face {
 	font-family: Centra;
 	src: url('./assets/font/CentraNo2-Bold.ttf');
@@ -15,7 +15,7 @@
 	font-weight: 400;
 }
 
-/************ Default Css ************/
+
 * {
   margin: 0;
   padding: 0;
@@ -82,7 +82,7 @@ p.success {
 p.danger {
 	color: red;
 }
-/************ Navbar Css ************/
+
 nav.navbar {
   padding: 18px 0;
   position: fixed;
@@ -129,7 +129,6 @@ span.navbar-text {
     width: 42px;
     height: 42px;
     color: #ffffff;
-    /* background: rgba(217, 217, 217, 0.1); */
     background: transparent;
     transition: background-color 0.3s ease;
     border: none;
@@ -143,26 +142,13 @@ span.navbar-text {
 }
 .social-icon a::before,
 .social-icon a::after {
-    content: none; /* Add this line */
+    content: none; 
 }
 .social-icon a:hover {
-  color: #000000; /* Make the icons black on hover */
-  background-color: #ffffff; /* Fill the circle with white on hover */
+  color: #000000; 
+  background-color: #ffffff; 
 }
 
-/* .social-icon a::before {
-    content: "";
-    width: 42px;
-    height: 42px;
-    position: absolute;
-    background-color: #ffffff;
-    border-radius: 50%;
-    transform: scale(0);
-	transition: 0.3s ease-in-out;
-}
-.social-icon a:hover::before {
-    transform: scale(1);
-} */
 .social-icon a img {
   display: none;
 	width: 40%;
@@ -174,14 +160,14 @@ span.navbar-text {
 }
 .nav-item .fork-btn .fork-btn-inner {
   background-color: #DC84F3 !important;
-  /* other styles... */
+
 }
 .navbar-link::after {
   content: '';
   display: block;
   width: 0;
-  height: 4px; /* Make the underline thicker */
-  background: #DC84F3; /* Make the underline */
+  height: 4px; 
+  background: #DC84F3;
   border-radius: 2px;
   transition: width .3s;
 }
@@ -189,7 +175,7 @@ span.navbar-text {
   width: 100%;
 }
 .navbar-link {
-  font-size: 16px; /* Adjust this value as needed */
+  font-size: 16px; 
 }
 .navbar-text button {
   font-weight: 700;
@@ -271,14 +257,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
-/************ Banner Css ************/
 .download-button {
-  border: 3px solid #ffffff; /* Adjust color as needed */
-  padding: 10px; /* Adjust padding as needed */
+  border: 3px solid #ffffff; 
+  padding: 10px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 5px; /* Adjust gap as needed */
+  gap: 5px; 
 }
 .banner {
   margin-top: 0;
@@ -291,10 +276,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .greeting {
   background: linear-gradient(to right, #BEADFA, #FFBDF7, #DFCCFB);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; /* Adjust color as needed */
+  -webkit-text-fill-color: transparent;
 }
 .greeting span {
-  color: #FFFFFF; /* Adjust color as needed */
+  color: #FFFFFF; 
   background: none;
   -webkit-background-clip: initial;
   -webkit-text-fill-color: initial;
@@ -303,11 +288,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(10px); /* Create the glassmorphism effect */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Add a shadow */
-  border-radius: 10px; /* Round the corners */
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); 
+  border-radius: 10px; 
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
@@ -363,7 +348,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 
-/************ Skills Css ************/
+
 .myProgressBar svg {
   width: 150px !important;
   height: 150px !important;
@@ -423,7 +408,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+
 #tsparticles {
   position: fixed !important;
   background-repeat: no-repeat !important;
@@ -520,12 +505,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   outline: none !important;
   box-shadow: none !important;
 }
-/* .project-heading {
-  color: white !important;
-  font-size: 2.3em !important;
-  font-weight: 500 !important;
-  padding-top: 10px !important;
-} */
+
 
  .project {
   padding: 80px 0;
@@ -538,17 +518,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight: 700;
   text-align: center;
 }
-/*
-.project p {
-  color: #B8B8B8;
-  font-size: 12px;
-  letter-spacing: 0.8px;
-  line-height: 1.3em; 
-  margin: 14px auto 30px auto;
-  text-align: center;
-  width: 56%;
-}
-*/
+
 .project .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
@@ -653,7 +623,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
-} */
+} 
 
 /* experience css */
 
@@ -661,11 +631,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #2d1759 !important;
 }
 .vertical-timeline-element-subtitle {
-  color: #5D3587; /* Replace with your desired color */
+  color: #5D3587; 
 }
 
 .vertical-timeline-element-content p {
-  color: purple; /* Replace with your desired color */
+  color: purple; 
 }
 .vertical-timeline-element-title,
 .vertical-timeline-element-subtitle,
@@ -840,7 +810,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 26%;
 }
 /* Footer */
-/* --------- */
+
 .footer {
   background-color: rgb(10, 4, 22);
   bottom: 0 !important;

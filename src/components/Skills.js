@@ -56,7 +56,7 @@ export const Skills = () => {
                             <div className="item">
                                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                                   <MyProgressBar value={80} />
-                                  <h5 style={{ marginTop: '20px' }}>Front-End <br/>(React, HTML, CSS, JS)</h5>
+                                  <h5 style={{ marginTop: '20px' }}>Front-End <br/>(React.js, HTML, CSS, JS)</h5>
                                 </div>
                             </div>
                             <div className="item">

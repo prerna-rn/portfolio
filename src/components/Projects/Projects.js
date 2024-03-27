@@ -19,10 +19,10 @@ export const Projects = () => {
     {
       imgPath: edu,
       title: "EduSangam",
-      description: `learning. Leveraged technology, real-time data, and personalized approaches to enhance individual student
+      description: `A full-stack website to revolutionize education by blending traditional and online. Leveraged technology, real-time data, and personalized approaches to enhance individual student
       performance and address challenges in larger classroom settings. 
       I worked on integrating ML models with the website using Flask. Developed a chatbot and
-      collaborated on developing accurate ML algorithms`,
+      collaborated on developing accurate ML algorithms.`,
       ghLink: "https://github.com/prerna-rn/GyaanSaathi",
       // demoLink: "https://prerna-rn.github.io/igdtuw/",
     },
@@ -35,14 +35,14 @@ export const Projects = () => {
     },
     {
       imgPath: weather,
-      title: "React Weather App",
+      title: "The Weather Stalker",
       description: "A weather app developed using React.js. The app utilises Geolocation API to automatically detect user's current location and forecast weather. Weather data is fetched from the OpenWeatherMap API. The user can search for any city and view the weather details. The app also displays the weather forecast for the next 5 days.",
-      ghLink: "https://github.com/soumyajit4419/Bits-0f-C0de",
-      demoLink: "https://blogs.soumya-jit.tech/",
+      ghLink: "https://github.com/prerna-rn/the-weather-stalker/",
+      demoLink: "https://prerna-rn.github.io/the-weather-stalker/",
     },
     {
       imgPath: linkedin,
-      title: "Editor.io",
+      title: "LinkedIn Post Recommender System",
       description: "Developed a highly effective post recommender system for LinkedIn with BERT, a Transformer model, achieving an average accuracy of 97%. Hosted on Streamlit. It is a supplement to my research paper titled, Evaluating Bert and GPT-2 Models for Personalised Linkedin Post Recommendation. It is published in IEEE Xplore as part of the Proceedings for the 14th International Conference on Computing,Communication, and Networking Technologies 2023 (ICCCNT). DOI-10.1109/ICCCNT56998.2023.10307957 ",
       ghLink: "https://github.com/prerna-rn/LinkedIn-BERT-Post-Recommender-System",
       demoLink: "https://prerna-rn-linkedin-bert-post-recommender-system.streamlit.app/",
