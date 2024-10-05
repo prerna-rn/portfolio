@@ -15,16 +15,20 @@ function App() {
   const experienceData = [
     {
       title: "Software Engineering Intern",
-      company: "@TBD",
-      date: "TBD",
-      description: "TBD"
+      company: "@Microsoft",
+      date: "May 2024 - July 2024",
+      description: `Member of Special Clouds Team which aims to make a unified approach to standardise deployments across all Microsoft-365 Services. 
+      Created an Azure DevOps extension to troubleshoot customer’s pipeline failures using Generative AI to enable self-served debugging and reduce the bandwidth of on-call engineers. 
+      Tech Stack: C#, .NET, Azure DevOps, React, Webpack, Chat Completion API.`
     },
     {
       title: "Machine Learning Research Intern",
       company: "@Prodigal AI",
       date: "March 2023 - July 2023",
-      description: `Drove research and development of groundbreaking projects, leveraging cutting-edge
-      technologies like LangChain, LLMs, GPT-4 to deliver innovative solutions.
+      description: `Drove research and development of innovative AI solutions as part of an 8-member team.
+      Developed “ZSearch”, an impactful cloud analytics chatbot utilising Generative Pretrained Transformers
+(GPTs) & conversational AI. Presented research findings at ICRET 2023 conference.
+Tech Stack: Deep Learning, LangChain, Large Language Models, Transformers, Streamlit.
       `
     },
     // Add more experience data as needed
